@@ -22,10 +22,10 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
-  reporter: "allure-playwright",
+  reporter: "allure-playwright", // Задан Allure для формирования отчета в Allure Framework
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'https://api-prod.hezzl.com',
+    baseURL: 'https://api-prod.hezzl.com', // Задан базовый URL который автоматически используется при запросах по API
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
